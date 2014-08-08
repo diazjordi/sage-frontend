@@ -31,8 +31,11 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!---Call for table population-->
     <script type="text/javascript" src="js/myscript.js"></script>
-        <script type="text/javascript" src="json/tableValues.json"></script>
+    <!--Call for model output data-->
+    <script type="text/javascript" src="json/MockModelOutput.json"></script>
 
 </head>
 
@@ -85,61 +88,28 @@
 <div class="page-header">
     <h1>Product</h1>
 </div>
+<form name="ProdSelect">
+    <select name="Product">
+                <option value="IYP">IYP</option>
+                <option value="YPC">YPC</option>
+            </select>
+</form>
 
 <div class="page-header">
     <h1>Category</h1>
 </div>
-    <div class="dropdown theme-dropdown clearfix">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">L1 <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Advertising</a></li>
+<form name="CatSelect">
+    <select name="Category">
+                <option value="Auto">Automotive Repair</option>
+                <option value="Pizza Place">Pizza Place</option>
+            </select>
+</form>
 
-                <li><a href="#">Bee Keeping</a></li>
-                <li><a href="#">Carpenters</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-                <li class="dropdown-submenu">
-                    <a tabindex="-1" href="#">More options</a>
-                    <ul class="dropdown-menu">
-
-                    </ul>
-                </li>
-    </div>
 
 <div class="page-header">
     <h1>Geography</h1>
 </div>
-
-
-
-<div class="page-header">
-    <h1>Product Results</h1>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <table id="table" class="table">
-            <thead>
-            <tr>
-                <th>Estimate</th>
-                <th> $100 </th>
-                <th> $200 </th>
-                <th> $300 </th>
-                <th> $400 </th>
-                <th> $500 </th>
-                <th> $600 </th>
-                <th> $700 </th>
-                <th> $800 </th>
-                <th> $900 </th>
-                <th> $1000</th>
-            </tr>
-            </thead>
-    </table>
-</div>
-
-    <form name="myForm">
+    <form name="GeoSelect">
             <select name="State">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -193,17 +163,40 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select>
-            <select name="Category">
-                <option value="Auto">Automotive Repair</option>
-                <option value="Pizza Place">Pizza Place</option>
-            </select>
+ </form>
+    
+<div class="page-header">
+    <h1>Product Results</h1>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table id="table" class="table">
+            <thead>
+            <tr>
+                <th>Estimate</th>
+                <th> $100 </th>
+                <th> $200 </th>
+                <th> $300 </th>
+                <th> $400 </th>
+                <th> $500 </th>
+                <th> $600 </th>
+                <th> $700 </th>
+                <th> $800 </th>
+                <th> $900 </th>
+                <th> $1000</th>
+            </tr>
+            </thead>
+    </table>
+</div>
 
-            <select name="Product">
-                <option value="IYP">IYP</option>
-                <option value="YPC">YPC</option>
-            </select>
-            <input type="button" value="Submit" onclick="load(document.forms['myForm']['Product'].value, document.forms['myForm']['Category'].value, document.forms['myForm']['State'].value)">
-    </form>
+
+
+
+
+
+
+    <input type="button" value="Submit" onclick="load(document.forms['myForm']['Product'].value, document.forms['myForm']['Category'].value, document.forms['myForm']['State'].value)">
+
 
 
 
