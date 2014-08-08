@@ -2,11 +2,18 @@
  * Created by jd5582 on 8/7/14.
  */
 
-function load() {
+function load(cat, geo) {
     var mydata = JSON.parse(data);
-    var mydate = JSON.parse(date);
-    alert(mydata[0].name);
-    alert(mydata[0].age);
-    alert(mydate[0].name);
-    alert(mydate[0].age);
+    for(i = 0; i < mydata.length; i++){
+        if(mydata[i].cat == cat && mydata[i].geo == geo) {
+        alert(mydata[i].cat);
+        alert(mydata[i].geo);
+        alert(mydata[i].clicks);
+        alert(mydata[i].imps);
+        }
+
+
+
+    }
+
 }
