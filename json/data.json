@@ -1,1 +1,1 @@
-data = '[{"cat" : "Auto", "geo" : "CA", "clicks" : "5", "imps" : "2"},{"cat" : "Auto", "geo" : "GA", "clicks" : "1", "imps" : "2"},{"cat" : "Auto", "geo" : "CA", "clicks" : "1", "imps" : "2"},{"cat" : "Other", "geo" : "CA", "clicks" : "1", "imps" : "2"}]';
+data = '[{"cat" : "Auto", "geo" : "CA", "clicks" : "5", "imps" : "2"},{"cat" : "Entertainment", "geo" : "GA", "clicks" : "1", "imps" : "2"},{"cat" : "Auto", "geo" : "GA", "clicks" : "1", "imps" : "4"},{"cat" : "Entertainment", "geo" : "CA", "clicks" : "1", "imps" : "2"}]';
