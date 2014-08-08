@@ -6,6 +6,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jQuery-2.0.0" level="application" />
+    <orderEntry type="library" name="NVD3" level="project" />
+    <orderEntry type="library" name="d3.js" level="project" />
   </component>
 </module>
 
