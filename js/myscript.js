@@ -6,7 +6,8 @@ function load(prod, cat, geo) {
     // Find a <table> element with id="myTable":
     var table = document.getElementById("table");
     //Create an empty <tr> element and add it to the 1st position of the table:
-    var row = table.insertRow(0); var row2 = table.insertRow(1);
+    var row = table.insertRow(0);
+    var row2 = table.insertRow(1);
     // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
@@ -19,6 +20,7 @@ function load(prod, cat, geo) {
     var cell9 = row.insertCell(8);
     var cell10 = row.insertCell(9);
     var cell11 = row.insertCell(10);
+
     var cell12 = row2.insertCell(0);
     var cell13 = row2.insertCell(1);
     var cell14 = row2.insertCell(2);
@@ -30,32 +32,35 @@ function load(prod, cat, geo) {
     var cell20 = row2.insertCell(8);
     var cell21 = row2.insertCell(9);
     var cell22 = row2.insertCell(10);
+
     // Add some text to the new cells:
     for(i = 0; i < json.length; i++){
+
         if(json[i].prod == prod && json[i].cat == cat && json[i].geo == geo) {
 
-            cell1.innerHTML = (json[i].Field1);
-            cell2.innerHTML =(json[i].CH100);
-            cell3.innerHTML =(json[i].CH200 );
-            cell4.innerHTML =(json[i].CH300 );
-            cell5.innerHTML =(json[i].CH400 );
-            cell6.innerHTML =(json[i].CH500);
-            cell7.innerHTML =(json[i].CH600 );
-            cell8.innerHTML =(json[i].CH700);
-            cell9.innerHTML =(json[i].CH800);
-            cell10.innerHTML =(json[i].CH900);
-            cell11.innerHTML =(json[i].CH1000);
-            cell12.innerHTML =(json[i].Field2);
-            cell13.innerHTML =(json[i].CL100);
-            cell14.innerHTML =(json[i].CL200 );
-            cell15.innerHTML =(json[i].CL300 );
-            cell16.innerHTML =(json[i].CL400 );
-            cell17.innerHTML =(json[i].CL500 );
-            cell18.innerHTML =(json[i].CL600 );
-            cell19.innerHTML =(json[i].CL700);
-            cell20.innerHTML =(json[i].CL800);
-            cell21.innerHTML =(json[i].CL900);
-            cell22.innerHTML =(json[i].CL1000);
+        cell1.innerHTML = (json[i].Field1);
+        cell2.innerHTML =(json[i].CH100);
+        cell3.innerHTML =(json[i].CH200 );
+        cell4.innerHTML =(json[i].CH300 );
+        cell5.innerHTML =(json[i].CH400 );
+        cell6.innerHTML =(json[i].CH500);
+        cell7.innerHTML =(json[i].CH600 );
+        cell8.innerHTML =(json[i].CH700);
+        cell9.innerHTML =(json[i].CH800);
+        cell10.innerHTML =(json[i].CH900);
+        cell11.innerHTML =(json[i].CH1000);
+
+        cell12.innerHTML =(json[i].Field2);
+        cell13.innerHTML =(json[i].CL100);
+        cell14.innerHTML =(json[i].CL200 );
+        cell15.innerHTML =(json[i].CL300 );
+        cell16.innerHTML =(json[i].CL400 );
+        cell17.innerHTML =(json[i].CL500 );
+        cell18.innerHTML =(json[i].CL600 );
+        cell19.innerHTML =(json[i].CL700);
+        cell20.innerHTML =(json[i].CL800);
+        cell21.innerHTML =(json[i].CL900);
+        cell22.innerHTML =(json[i].CL1000);
         }
     }
 }

@@ -109,8 +109,8 @@
 <div class="page-header">
     <h1>Geography</h1>
 </div>
-    <form name="GeoSelect">
-            <select name="State">
+ <form name="GeoSelect">
+     <select name="State">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
                 <option value="AZ">Arizona</option>
@@ -162,11 +162,14 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
-            </select>
+     </select>
  </form>
-    
+
+
+<input type="button" value="Submit" onclick="load(document.forms['ProdSelect']['Product'].value, document.forms['CatSelect']['Category'].value, document.forms['GeoSelect']['State'].value)">
+
 <div class="page-header">
-    <h1>Product Results</h1>
+ <h1>Product Results</h1>
 </div>
 <div class="row">
     <div class="col-md-12">
@@ -189,13 +192,6 @@
     </table>
 </div>
 
-
-
-
-
-
-
-    <input type="button" value="Submit" onclick="load(document.forms['myForm']['Product'].value, document.forms['myForm']['Category'].value, document.forms['myForm']['State'].value)">
 
 
 
