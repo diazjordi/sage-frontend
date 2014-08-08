@@ -6,8 +6,12 @@ function load(prod, cat, geo) {
     // Find a <table> element with id="myTable":
     var table = document.getElementById("table");
     //Create an empty <tr> element and add it to the 1st position of the table:
-    var row = table.insertRow(0);
-    var row2 = table.insertRow(1);
+    if(table.rows.length == 3){
+        table.deleteRow(2);
+        table.deleteRow(1);
+    }
+    var row = table.insertRow(1);
+    var row2 = table.insertRow(2);
     // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
