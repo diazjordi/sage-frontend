@@ -18,13 +18,20 @@ function processForm() {
         + " for " + prod);
     // Find a <table> element with id="myTable":
         //Create an empty <tr> element and add it to the 1st position of the table:
-        if(table.rows.length == 3){
+        if(table.rows.length == 5){
+            table.deleteRow(4);
+            table.deleteRow(3);
             table.deleteRow(2);
             table.deleteRow(1);
         }
         var row = table.insertRow(1);
         var row2 = table.insertRow(2);
-        // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+        var row3 = table.insertRow(3);
+        var row4 = table.insertRow(4);
+
+
+
+    // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
@@ -48,6 +55,30 @@ function processForm() {
         var cell20 = row2.insertCell(8);
         var cell21 = row2.insertCell(9);
         var cell22 = row2.insertCell(10);
+
+        var cell23 = row4.insertCell(0);
+        var cell24 = row4.insertCell(1);
+        var cell25 = row4.insertCell(2);
+        var cell26 = row4.insertCell(3);
+        var cell27 = row4.insertCell(4);
+        var cell28 = row4.insertCell(5);
+        var cell29 = row4.insertCell(6);
+        var cell30 = row4.insertCell(7);
+        var cell31 = row4.insertCell(8);
+        var cell32 = row4.insertCell(9);
+        var cell33 = row4.insertCell(10);
+
+        var cell34 = row3.insertCell(0);
+        var cell35 = row3.insertCell(1);
+        var cell36 = row3.insertCell(2);
+        var cell37 = row3.insertCell(3);
+        var cell38 = row3.insertCell(4);
+        var cell39 = row3.insertCell(5);
+        var cell40 = row3.insertCell(6);
+        var cell41 = row3.insertCell(7);
+        var cell42 = row3.insertCell(8);
+        var cell43 = row3.insertCell(9);
+        var cell44 = row3.insertCell(10);
 
         // Add some text to the new cells:
         for(i = 0; i < json.length; i++){
@@ -78,6 +109,30 @@ function processForm() {
                 cell20.innerHTML =(json[i].CL800);
                 cell21.innerHTML =(json[i].CL900);
                 cell22.innerHTML =(json[i].CL1000);
+
+                cell23.innerHTML =(json[i].Field3);
+                cell24.innerHTML =(json[i].IH100);
+                cell25.innerHTML =(json[i].IH200 );
+                cell26.innerHTML =(json[i].IH300 );
+                cell27.innerHTML =(json[i].IH400 );
+                cell28.innerHTML =(json[i].IH500);
+                cell29.innerHTML =(json[i].IH600 );
+                cell30.innerHTML =(json[i].IH700);
+                cell31.innerHTML =(json[i].IH800);
+                cell32.innerHTML =(json[i].IH900);
+                cell33.innerHTML =(json[i].IH1000);
+
+                cell34.innerHTML =(json[i].Field4);
+                cell35.innerHTML =(json[i].IL100);
+                cell36.innerHTML =(json[i].IL200 );
+                cell37.innerHTML =(json[i].IL300 );
+                cell38.innerHTML =(json[i].IL400 );
+                cell39.innerHTML =(json[i].IL500 );
+                cell40.innerHTML =(json[i].IL600 );
+                cell41.innerHTML =(json[i].IL700);
+                cell42.innerHTML =(json[i].IL800);
+                cell43.innerHTML =(json[i].IL900);
+                cell44.innerHTML =(json[i].IL1000);
             }
         }
     cell12.focus();
