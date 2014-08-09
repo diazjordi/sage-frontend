@@ -499,6 +499,4 @@ json =  [{"prod":"IYP","geo":"California","cat":"Arts & Entertainment","Field1"
 {"prod":"YPC","geo":"Iowa","cat":"Travel & Recreation","Field1":"Clicks-High","CH100":"19","CH200":"19","CH300":"25","CH400":"36","CH500":"41","CH600":"54","CH700":"64","CH800":"79","CH900":"94","CH1000":"114","Field2":"Clicks-Low","CL100":"10","CL200":"14","CL300":"17","CL400":"23","CL500":"29","CL600":"38","CL700":"47","CL800":"64","CL900":"76","CL1000":"100"}
 
 
-
-
 ];

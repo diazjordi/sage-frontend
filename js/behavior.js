@@ -8,6 +8,12 @@ function processForm() {
     var cat = document.getElementById("cbutton").text;
     var geo = document.getElementById("gbutton").text;
     var table = document.getElementById("table");
+
+    if(cat == "Select" || geo == "Select"){
+        alert("Must select a Catagory and Geography");
+        return false;
+    }
+
     alert("You selected " + cat + " in " + geo
         + " for " + prod);
     // Find a <table> element with id="myTable":
