@@ -28,6 +28,7 @@ function processForm() {
         var row2 = table.insertRow(2);
         var row3 = table.insertRow(3);
         var row4 = table.insertRow(4);
+        var row5 = table.insertRow(5);
 
 
 
@@ -79,6 +80,18 @@ function processForm() {
         var cell42 = row3.insertCell(8);
         var cell43 = row3.insertCell(9);
         var cell44 = row3.insertCell(10);
+
+        var cell45 = row5.insertCell(0);
+        var cell46 = row5.insertCell(1);
+        var cell47 = row5.insertCell(2);
+        var cell48 = row5.insertCell(3);
+        var cell49 = row5.insertCell(4);
+        var cell50 = row5.insertCell(5);
+        var cell51 = row5.insertCell(6);
+        var cell52 = row5.insertCell(7);
+        var cell53 = row5.insertCell(8);
+        var cell54 = row5.insertCell(9);
+        var cell55 = row5.insertCell(10);
 
         // Add some text to the new cells:
         for(i = 0; i < json.length; i++){
@@ -133,6 +146,18 @@ function processForm() {
                 cell42.innerHTML =(json[i].IL800);
                 cell43.innerHTML =(json[i].IL900);
                 cell44.innerHTML =(json[i].IL1000);
+
+                cell45.innerHTML =(json[i].Field5);
+                cell46.innerHTML =(json[i].Ca100);
+                cell47.innerHTML =(json[i].Ca200 );
+                cell48.innerHTML =(json[i].Ca300 );
+                cell49.innerHTML =(json[i].Ca400 );
+                cell50.innerHTML =(json[i].Ca500 );
+                cell51.innerHTML =(json[i].Ca600 );
+                cell52.innerHTML =(json[i].Ca700);
+                cell53.innerHTML =(json[i].Ca800);
+                cell54.innerHTML =(json[i].Ca900);
+                cell55.innerHTML =(json[i].Ca1000);
             }
         }
     cell12.focus();
